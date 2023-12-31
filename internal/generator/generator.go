@@ -6,6 +6,7 @@ SPDX-License-Identifier: Apache-2.0
 package generator
 
 import (
+	"context"
 	"fmt"
 	"io/fs"
 
@@ -29,7 +30,7 @@ func NewResourceGenerator(name string, fsys fs.FS, chartPath string, client clie
 	return &ResourceGenerator{generator: generator}, nil
 }
 
-func (g *ResourceGenerator) Generate(namespace string, name string, parameters componentoperatorruntimetypes.Unstructurable) ([]client.Object, error) {
+func (g *ResourceGenerator) Generate(ctx context.Context, namespace string, name string, parameters componentoperatorruntimetypes.Unstructurable) ([]client.Object, error) {
 	values := parameters.ToUnstructured()
 
 	values["fullnameOverride"] = name
@@ -55,7 +56,7 @@ func (g *ResourceGenerator) Generate(namespace string, name string, parameters c
 		delete(values, "additionalResources")
 	}
 
-	resources, err := g.generator.Generate(namespace, name, componentoperatorruntimetypes.UnstructurableMap(values))
+	resources, err := g.generator.Generate(ctx, namespace, name, componentoperatorruntimetypes.UnstructurableMap(values))
 	if err != nil {
 		return nil, err
 	}
