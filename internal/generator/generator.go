@@ -11,7 +11,6 @@ import (
 	"io/fs"
 
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
-	"k8s.io/client-go/discovery"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
 	"github.com/sap/component-operator-runtime/pkg/manifests"
@@ -22,8 +21,8 @@ type ResourceGenerator struct {
 	generator *manifests.HelmGenerator
 }
 
-func NewResourceGenerator(name string, fsys fs.FS, chartPath string, client client.Client, discoveryClient discovery.DiscoveryInterface) (*ResourceGenerator, error) {
-	generator, err := manifests.NewHelmGenerator(name, fsys, chartPath, client, discoveryClient)
+func NewResourceGenerator(fsys fs.FS, chartPath string, client client.Client) (*ResourceGenerator, error) {
+	generator, err := manifests.NewHelmGenerator(fsys, chartPath, client)
 	if err != nil {
 		return nil, err
 	}
