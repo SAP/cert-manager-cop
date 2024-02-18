@@ -13,16 +13,16 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	"sigs.k8s.io/controller-runtime/pkg/client"
 
-	"github.com/sap/component-operator-runtime/pkg/manifests"
+	helmgenerator "github.com/sap/component-operator-runtime/pkg/manifests/helm"
 	componentoperatorruntimetypes "github.com/sap/component-operator-runtime/pkg/types"
 )
 
 type ResourceGenerator struct {
-	generator *manifests.HelmGenerator
+	generator *helmgenerator.HelmGenerator
 }
 
 func NewResourceGenerator(fsys fs.FS, chartPath string, client client.Client) (*ResourceGenerator, error) {
-	generator, err := manifests.NewHelmGenerator(fsys, chartPath, client)
+	generator, err := helmgenerator.NewHelmGenerator(fsys, chartPath, client)
 	if err != nil {
 		return nil, err
 	}
