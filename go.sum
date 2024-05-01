@@ -130,6 +130,8 @@ github.com/sap/component-operator-runtime v0.3.20 h1:xUh7zS0LYa1mv+6Vl3c/5GDyNFa
 github.com/sap/component-operator-runtime v0.3.20/go.mod h1:Bg/rJl/NGCo/QHLmBF2UEUtwlozsk3L6vojguQ2YXM0=
 github.com/sap/component-operator-runtime v0.3.21 h1:4eiGLXfzsusELQU3CwK4wj12r9tUlDqugH32jMf2gEg=
 github.com/sap/component-operator-runtime v0.3.21/go.mod h1:l7m0pIkG9eOPHS9/ZRuE2ZygTG9K6tZbV10DiQOCP/s=
+github.com/sap/component-operator-runtime v0.3.22 h1:/Bk6W1C1cBa9Z7TOHAIq7HJpK8eWpbhLz5nhOukdG54=
+github.com/sap/component-operator-runtime v0.3.22/go.mod h1:Kzo/+6erlOS17uqsvuWnjj3F6MuYBCYj3rrWXZCD5FY=
 github.com/sap/go-generics v0.2.4 h1:ptpYEQ9/42rGVn8m21mq/1KrlxEUvWHdPazrJtNVVF0=
 github.com/sap/go-generics v0.2.4/go.mod h1:TtoBdtBmR4Xv+eMN+WAvq+XPkifDgdupsHum+jUcw9Y=
 github.com/sap/go-generics v0.2.5 h1:d/RzPpxqmnCdT7gIOO6ekFKnd+Vcse6U0lopoLr1uPU=
@@ -140,6 +142,8 @@ github.com/sap/go-generics v0.2.7 h1:QyCBmBnuc3lk3P/zwdy0lWGNKesnpyonOFnHcNI9KSw
 github.com/sap/go-generics v0.2.7/go.mod h1:k5qZxqCgdmDu6KmmNKLCGtcXZ0wJWzvLvb3/pzZ/+Og=
 github.com/sap/go-generics v0.2.8 h1:IwRzXSf2g4g6hB5aABbaxg+EMntgx9nj9HjW+VpxYzo=
 github.com/sap/go-generics v0.2.8/go.mod h1:vTfK+QKsUkJrFtdRybKGKFzFslMNNUbEof0hovZXJ2U=
+github.com/sap/go-generics v0.2.9 h1:EleSr+FFw1vctoNO3ye6P6H0BwBGrmhGErE6s7/Ntvo=
+github.com/sap/go-generics v0.2.9/go.mod h1:eVi3GoySdkMTd7uvwehG7ZOE8tJGHtSlZt4bUEj3liI=
 github.com/shopspring/decimal v1.2.0/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
 github.com/shopspring/decimal v1.3.1 h1:2Usl1nmF/WZucqkFZhnfFYxxxu8LG21F6nPQBE5gKV8=
 github.com/shopspring/decimal v1.3.1/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
@@ -312,6 +316,8 @@ sigs.k8s.io/controller-runtime v0.17.3 h1:65QmN7r3FWgTxDMz9fvGnO1kbf2nu+acg9p2R9
 sigs.k8s.io/controller-runtime v0.17.3/go.mod h1:N0jpP5Lo7lMTF9aL56Z/B2oWBJjey6StQM0jRbKQXtY=
 sigs.k8s.io/controller-runtime v0.18.0 h1:Z7jKuX784TQSUL1TIyeuF7j8KXZ4RtSX0YgtjKcSTME=
 sigs.k8s.io/controller-runtime v0.18.0/go.mod h1:tuAt1+wbVsXIT8lPtk5RURxqAnq7xkpv2Mhttslg7Hw=
+sigs.k8s.io/controller-runtime v0.18.1 h1:RpWbigmuiylbxOCLy0tGnq1cU1qWPwNIQzoJk+QeJx4=
+sigs.k8s.io/controller-runtime v0.18.1/go.mod h1:tuAt1+wbVsXIT8lPtk5RURxqAnq7xkpv2Mhttslg7Hw=
 sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd h1:EDPBXCAspyGV4jQlpZSudPeMmr1bNJefnuqLsRAsHZo=
 sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd/go.mod h1:B8JuhiUyNFVKdsE8h686QcCxMaH6HrOAZj4vswFpcB0=
 sigs.k8s.io/structured-merge-diff/v4 v4.4.1 h1:150L+0vs/8DA78h1u02ooW1/fFq/Lwr+sGiqlzvrtq4=
