@@ -108,6 +108,8 @@ github.com/prometheus/client_golang v1.18.0 h1:HzFfmkOzH5Q8L8G+kSJKUx5dtG87sewO+
 github.com/prometheus/client_golang v1.18.0/go.mod h1:T+GXkCk5wSJyOqMIzVgvvjFDlkOQntgjkJWKrN5txjA=
 github.com/prometheus/client_golang v1.19.0 h1:ygXvpU1AoN1MhdzckN+PyD9QJOSD4x7kmXYlnfbA6JU=
 github.com/prometheus/client_golang v1.19.0/go.mod h1:ZRM9uEAypZakd+q/x7+gmsvXdURP+DABIEIjnmDdp+k=
+github.com/prometheus/client_golang v1.19.1 h1:wZWJDwK+NameRJuPGDhlnFgx8e8HN3XHQeLaYJFJBOE=
+github.com/prometheus/client_golang v1.19.1/go.mod h1:mP78NwGzrVks5S2H6ab8+ZZGJLZUq1hoULYBAYBw1Ho=
 github.com/prometheus/client_model v0.6.0 h1:k1v3CzpSRUTrKMppY35TLwPvxHqBu0bYgxZzqGIgaos=
 github.com/prometheus/client_model v0.6.0/go.mod h1:NTQHnmxFpouOD0DpvP4XujX3CdOAGQPoaGhyTchlyt8=
 github.com/prometheus/common v0.47.0 h1:p5Cz0FNHo7SnWOmWmoRozVcjEp0bIVU8cV7OShpjL1k=
@@ -138,6 +140,8 @@ github.com/sap/component-operator-runtime v0.3.22 h1:/Bk6W1C1cBa9Z7TOHAIq7HJpK8e
 github.com/sap/component-operator-runtime v0.3.22/go.mod h1:Kzo/+6erlOS17uqsvuWnjj3F6MuYBCYj3rrWXZCD5FY=
 github.com/sap/component-operator-runtime v0.3.23 h1:ktrSUIhcmcKsOyGPb+0efiRNPWRCfxv4b8YajtVp3ds=
 github.com/sap/component-operator-runtime v0.3.23/go.mod h1:pt2821RgEnICCQly+lCI/5QnRIxrbfW/aJiIkQrxUog=
+github.com/sap/component-operator-runtime v0.3.24 h1:dcj7mZ6QXmzxSaKfeIOvAcp8kMBGVfH7Qz00UY8hdE0=
+github.com/sap/component-operator-runtime v0.3.24/go.mod h1:N/0A8kSBsOsQzRspWbVOsvwD1jJOSe+liuQz76N9QcM=
 github.com/sap/go-generics v0.2.4 h1:ptpYEQ9/42rGVn8m21mq/1KrlxEUvWHdPazrJtNVVF0=
 github.com/sap/go-generics v0.2.4/go.mod h1:TtoBdtBmR4Xv+eMN+WAvq+XPkifDgdupsHum+jUcw9Y=
 github.com/sap/go-generics v0.2.5 h1:d/RzPpxqmnCdT7gIOO6ekFKnd+Vcse6U0lopoLr1uPU=
@@ -150,6 +154,8 @@ github.com/sap/go-generics v0.2.8 h1:IwRzXSf2g4g6hB5aABbaxg+EMntgx9nj9HjW+VpxYzo
 github.com/sap/go-generics v0.2.8/go.mod h1:vTfK+QKsUkJrFtdRybKGKFzFslMNNUbEof0hovZXJ2U=
 github.com/sap/go-generics v0.2.9 h1:EleSr+FFw1vctoNO3ye6P6H0BwBGrmhGErE6s7/Ntvo=
 github.com/sap/go-generics v0.2.9/go.mod h1:eVi3GoySdkMTd7uvwehG7ZOE8tJGHtSlZt4bUEj3liI=
+github.com/sap/go-generics v0.2.10 h1:uHMd4Kmq1nZSCyYSlYxB5zzczkvNdzRdsGLk53X5Bgw=
+github.com/sap/go-generics v0.2.10/go.mod h1:HtEZPqnJsgX8aetPG46eGThNP13xz/ESFIc9bGsFoCo=
 github.com/shopspring/decimal v1.2.0/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
 github.com/shopspring/decimal v1.3.1 h1:2Usl1nmF/WZucqkFZhnfFYxxxu8LG21F6nPQBE5gKV8=
 github.com/shopspring/decimal v1.3.1/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
@@ -316,6 +322,8 @@ k8s.io/utils v0.0.0-20240102154912-e7106e64919e h1:eQ/4ljkx21sObifjzXwlPKpdGLrCf
 k8s.io/utils v0.0.0-20240102154912-e7106e64919e/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 sigs.k8s.io/cli-utils v0.35.0 h1:dfSJaF1W0frW74PtjwiyoB4cwdRygbHnC7qe7HF0g/Y=
 sigs.k8s.io/cli-utils v0.35.0/go.mod h1:ITitykCJxP1vaj1Cew/FZEaVJ2YsTN9Q71m02jebkoE=
+sigs.k8s.io/cli-utils v0.36.0 h1:k7GM6LmIMydtvM6Ad91XuqKk0QEVL9bVbaiX1uvWIrA=
+sigs.k8s.io/cli-utils v0.36.0/go.mod h1:uCFC3BPXB3xHFQyKkWUlTrncVDCKzbdDfqZqRTCrk24=
 sigs.k8s.io/controller-runtime v0.17.2 h1:FwHwD1CTUemg0pW2otk7/U5/i5m2ymzvOXdbeGOUvw0=
 sigs.k8s.io/controller-runtime v0.17.2/go.mod h1:+MngTvIQQQhfXtwfdGw/UOQ/aIaqsYywfCINOtwMO/s=
 sigs.k8s.io/controller-runtime v0.17.3 h1:65QmN7r3FWgTxDMz9fvGnO1kbf2nu+acg9p2R9oYYYk=
