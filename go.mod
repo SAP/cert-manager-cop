@@ -4,7 +4,7 @@ go 1.22.3
 
 require (
 	github.com/pkg/errors v0.9.1
-	github.com/sap/component-operator-runtime v0.3.24
+	github.com/sap/component-operator-runtime v0.3.25
 	k8s.io/apiextensions-apiserver v0.30.1
 	k8s.io/apimachinery v0.30.1
 	k8s.io/client-go v0.30.1
@@ -51,7 +51,7 @@ require (
 	github.com/prometheus/client_model v0.6.0 // indirect
 	github.com/prometheus/common v0.48.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
-	github.com/sap/go-generics v0.2.10 // indirect
+	github.com/sap/go-generics v0.2.11 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.6.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
