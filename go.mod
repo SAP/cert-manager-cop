@@ -1,15 +1,15 @@
 module github.com/sap/cert-manager-cop
 
-go 1.22.3
+go 1.22.4
 
 require (
 	github.com/pkg/errors v0.9.1
-	github.com/sap/component-operator-runtime v0.3.26
-	k8s.io/apiextensions-apiserver v0.30.1
-	k8s.io/apimachinery v0.30.1
-	k8s.io/client-go v0.30.1
-	k8s.io/kube-aggregator v0.30.1
-	sigs.k8s.io/controller-runtime v0.18.3
+	github.com/sap/component-operator-runtime v0.3.30
+	k8s.io/apiextensions-apiserver v0.30.2
+	k8s.io/apimachinery v0.30.2
+	k8s.io/client-go v0.30.2
+	k8s.io/kube-aggregator v0.30.2
+	sigs.k8s.io/controller-runtime v0.18.4
 )
 
 require (
@@ -51,7 +51,7 @@ require (
 	github.com/prometheus/client_model v0.6.0 // indirect
 	github.com/prometheus/common v0.48.0 // indirect
 	github.com/prometheus/procfs v0.12.0 // indirect
-	github.com/sap/go-generics v0.2.11 // indirect
+	github.com/sap/go-generics v0.2.13 // indirect
 	github.com/shopspring/decimal v1.3.1 // indirect
 	github.com/spf13/cast v1.6.0 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
@@ -71,8 +71,8 @@ require (
 	gopkg.in/inf.v0 v0.9.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/api v0.30.1 // indirect
-	k8s.io/component-base v0.30.1 // indirect
+	k8s.io/api v0.30.2 // indirect
+	k8s.io/component-base v0.30.2 // indirect
 	k8s.io/klog/v2 v2.120.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20240228011516-70dd3763d340 // indirect
 	k8s.io/utils v0.0.0-20240102154912-e7106e64919e // indirect
