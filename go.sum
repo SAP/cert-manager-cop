@@ -147,6 +147,8 @@ github.com/sap/component-operator-runtime v0.3.34 h1:ewqs6mAQxYlBGsXffBkBWcwpZTP
 github.com/sap/component-operator-runtime v0.3.34/go.mod h1:nvtWaSpVyb+2d+AWhHPjyr187/yrt9ssVH7DxMyGkrU=
 github.com/sap/component-operator-runtime v0.3.58 h1:sVIY3aOiFNZivKs3k6Q8LoDrcQd+m1H9+FAJaqTL/1w=
 github.com/sap/component-operator-runtime v0.3.58/go.mod h1:ofE29vHBRuFOl2o2yx9NxdM27m9YtN5iL6UpW7xh318=
+github.com/sap/component-operator-runtime v0.3.59 h1:ejuZqAvkE4WRF5dyu5y90h0BpUmV1k4rnzeWlSz7dl0=
+github.com/sap/component-operator-runtime v0.3.59/go.mod h1:Dxdo7MSwuBPwL7AJeW4ZAzZFlKnSHm7q8ZvGeEXG0eA=
 github.com/sap/go-generics v0.2.13 h1:rSED7M+S7aw/9AomJq7omjgZtwvoixHsfVbOiCWs4cM=
 github.com/sap/go-generics v0.2.13/go.mod h1:G6v+AnJtKlUGB/ATd+zdUcosvBdUSyrHg7/kn5UKgx8=
 github.com/sap/go-generics v0.2.21 h1:WfRIqFSwEzHNww+q4iayCpo139EXIoKCIyv45qfo62o=
@@ -161,6 +163,8 @@ github.com/spf13/cast v1.6.0 h1:GEiTHELF+vaR5dhz3VqZfFSzZjYbgeKDpBxQVS4GYJ0=
 github.com/spf13/cast v1.6.0/go.mod h1:ancEpBxwJDODSW/UG4rDrAqiKolqNNh2DX3mk86cAdo=
 github.com/spf13/cast v1.7.0 h1:ntdiHjuueXFgm5nzDRdOS4yfT43P5Fnud6DH50rz/7w=
 github.com/spf13/cast v1.7.0/go.mod h1:ancEpBxwJDODSW/UG4rDrAqiKolqNNh2DX3mk86cAdo=
+github.com/spf13/cast v1.7.1 h1:cuNEagBQEHWN1FnbGEjCXL2szYEXqfJPbP2HNUaca9Y=
+github.com/spf13/cast v1.7.1/go.mod h1:ancEpBxwJDODSW/UG4rDrAqiKolqNNh2DX3mk86cAdo=
 github.com/spf13/pflag v1.0.5 h1:iy+VFUOCP1a+8yFto/drg2CJ5u0yRoB7fZw3DKv/JXA=
 github.com/spf13/pflag v1.0.5/go.mod h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
