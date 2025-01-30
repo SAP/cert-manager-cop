@@ -28,8 +28,9 @@ const Name = "cert-manager-cop.cs.sap.com"
 var data embed.FS
 
 type Options struct {
-	Name       string
-	FlagPrefix string
+	Name                  string
+	DefaultServiceAccount string
+	FlagPrefix            string
 }
 
 type Operator struct {
@@ -83,6 +84,7 @@ func (o *Operator) InitScheme(scheme *runtime.Scheme) {
 }
 
 func (o *Operator) InitFlags(flagset *flag.FlagSet) {
+	flagset.StringVar(&o.options.DefaultServiceAccount, "default-service-account", o.options.DefaultServiceAccount, "Default service account name")
 }
 
 func (o *Operator) ValidateFlags() error {
@@ -106,7 +108,9 @@ func (o *Operator) Setup(mgr ctrl.Manager) error {
 	if err := component.NewReconciler[*operatorv1alpha1.CertManager](
 		o.options.Name,
 		resourceGenerator,
-		component.ReconcilerOptions{},
+		component.ReconcilerOptions{
+			DefaultServiceAccount: &o.options.DefaultServiceAccount,
+		},
 	).SetupWithManager(mgr); err != nil {
 		return errors.Wrapf(err, "unable to create controller")
 	}
