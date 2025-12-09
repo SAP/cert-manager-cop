@@ -61,3 +61,6 @@ resources:
     cpu: 100m
     # -- Memory request
     memory: 128Mi
+
+webhook:
+  timeoutSeconds: 10
