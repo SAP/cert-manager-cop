@@ -133,3 +133,6 @@ YEAR ?= $(shell date +%Y)
 update-go-header-year:
 	@find . -name "*.go" -type f -exec sed -i \
 	"s/^SPDX-FileCopyrightText: [0-9]\{4\} SAP SE or an SAP affiliate company and admission-webhook-runtime contributors/SPDX-FileCopyrightText: $(YEAR) SAP SE or an SAP affiliate company and admission-webhook-runtime contributors/" {} +
+
+	@find . -name "*.toml" -type f -exec sed -i \
+	"s/SPDX-FileCopyrightText = \"[0-9]\{4\} SAP SE or an SAP affiliate company and cert-manager-cop contributors\"/SPDX-FileCopyrightText = \"$(YEAR) SAP SE or an SAP affiliate company and cert-manager-cop contributors\"/" {} +
