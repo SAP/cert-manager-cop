@@ -124,3 +124,16 @@ update-content: ## Update external resources used by this repository.
 	helm fetch --repo https://charts.jetstack.io cert-manager --untar --untardir pkg/operator/data/charts
 	rm -rf pkg/operator/data/charts/*.tgz
 	rm -f pkg/operator/data/charts/*/*.tgz
+
+# Set the year for SPDX header updates (default: current year)
+YEAR ?= $(shell date +%Y)
+
+.PHONY: update-header-year
+update-header-year:
+    # Go + TXT + MD
+	@find . -type f \( -name "*.go" -o -name "*.txt" \) -exec sed -i \
+	's/^SPDX-FileCopyrightText: [0-9]\{4\}\( SAP SE or an SAP affiliate company and [^"]\+ contributors\)/SPDX-FileCopyrightText: $(YEAR)\1/' {} +
+
+    # TOML
+	@find . -type f -name "*.toml" -exec sed -i \
+	's/^SPDX-FileCopyrightText = "[0-9]\{4\}\( SAP SE or an SAP affiliate company and [^"]\+ contributors\)"/SPDX-FileCopyrightText = "$(YEAR)\1"/' {} +
