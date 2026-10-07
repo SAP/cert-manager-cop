@@ -16,6 +16,9 @@ metadata:
   {{- end }}
 spec:
   backoffLimit: {{ .Values.startupapicheck.backoffLimit }}
+  {{- if hasKey .Values.startupapicheck "ttlSecondsAfterFinished" }}
+  ttlSecondsAfterFinished: {{ .Values.startupapicheck.ttlSecondsAfterFinished }}
+  {{- end }}
   template:
     metadata:
       labels:
@@ -41,13 +44,20 @@ spec:
       {{- with .Values.global.priorityClassName }}
       priorityClassName: {{ . | quote }}
       {{- end }}
+      {{- if (hasKey .Values.global "hostUsers") }}
+      hostUsers: {{ .Values.global.hostUsers }}       
+      {{- end }}
       {{- with .Values.startupapicheck.securityContext }}
       securityContext:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      {{- with .Values.global.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         - name: {{ .Chart.Name }}-startupapicheck
-          image: "{{ template "image" (tuple .Values.startupapicheck.image $.Chart.AppVersion) }}"
+          image: "{{ template "cert-manager.image" (tuple .Values.startupapicheck.image .Values.imageRegistry .Values.imageNamespace (printf ":%s" .Chart.AppVersion)) }}"
           imagePullPolicy: {{ .Values.startupapicheck.image.pullPolicy }}
           args:
           - check
@@ -76,7 +86,14 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
           {{- end }}
-      {{- with .Values.startupapicheck.nodeSelector }}
+      {{- if .Values.startupapicheck.runtimeClassName }}
+      runtimeClassName: {{ .Values.startupapicheck.runtimeClassName | quote }}
+      {{- else if .Values.global.runtimeClassName }}
+      runtimeClassName: {{ .Values.global.runtimeClassName | quote }}
+      {{- end }}
+      {{- $nodeSelector := .Values.global.nodeSelector | default dict }}
+      {{- $nodeSelector = merge $nodeSelector (.Values.startupapicheck.nodeSelector | default dict) }}
+      {{- with $nodeSelector }}
       nodeSelector:
         {{- range $key, $value := . }}
         {{ $key }}: {{ $value | quote }}
